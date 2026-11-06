@@ -15,10 +15,10 @@ spec:
         app: my-app
     spec:
       imagePullSecrets:
-      - name: my-registry-key
+      - name: ecr-key
       containers:
       - name: my-app
-        image: privat-repo/my-app:1.3
+        image: 780432333923.dkr.ecr.ca-central-1.amazonaws.com/my-app:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 3000
